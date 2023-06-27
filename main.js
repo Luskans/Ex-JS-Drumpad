@@ -143,3 +143,19 @@ keys.forEach(key => {
 // console.log(timePassed);
 
 // window.addEventListener('contextmenu', playMusic);
+
+// function beatBox() {
+//     simulateKey() {
+
+//     };
+//     playBeat() {
+
+//     };
+// };
+
+// window.addEventListener('keydown', (event) => {
+//     if (event.key === 'K') {
+//         beatBox();
+//     };
+// });
+
