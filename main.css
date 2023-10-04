@@ -2,7 +2,7 @@
 
 html,
 body {
-    background: linear-gradient(to left, #fd746c, #ff9068);
+    background: linear-gradient(to left, #c38ee8, #a7e8d3);
     height: 100%;
     width: 100%;
     display: flex;
@@ -25,12 +25,12 @@ h1 {
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 20px 30px;
-    background-color: white;
+    background-color: rgb(63, 63, 63);
     border: 4px solid black;
     box-shadow: 4px 4px 0 0 black;
 }
 
-.key {
+.key, .record-block, .play-block {
     width: 100px;
     height: 100px;
     margin: 10px 0;
@@ -48,19 +48,40 @@ h1 {
     transform: translate(0, 0);
 }
 
-.sound {
+.record-block {
+    background-color: rgb(223, 143, 143);
+}
+
+.play-block {
+    background-color: rgb(167, 240, 174);
+}
+
+.sound, .record, .record-text {
     font-size: 14px;
     text-transform: uppercase;
     color: #ff9068;
     margin-top: 7px
 }
 
-.key.playing {
+.record, .record-text {
+    color: black;
+}
+
+.key.playing, .recording, .playing-song {
     background-color: #ddd;
     box-shadow: 0 0 0 0 black;
     transform: translate(4px, 4px);
     border-color: #fd746c;
     transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.recording {
+    background-color: rgb(179, 78, 78);
+}
+
+.playing-song {
+    background-color: rgb(87, 173, 96);
+    border-color: #388d57;
 }
 
 .key.playing .sound {
